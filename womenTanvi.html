@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIT Application - TANVI ARORA</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+           margin: 10px 0; /* Set top and bottom margins to 20px, left and right margins to 0 */
+
+            height: calc(100vh - 10px); /* Adjust height to account for the top and bottom margins */
+            display: flex;
+            justify-content: flex-start; /* Align content to the left */
+            align-items: center; /* Center content vertically */
+	    background: linear-gradient(to right, #f0f4f8, #e1e8ed); /* Gradient background */
+	    font-family: 'Roboto', sans-serif; /* Modern font */
+
+
+            /*background-color: white; *//* Set background color to white */
+            border: 5px solid darkpurple; /* Dark purple border around the entire page */
+            padding: 20px; /* Padding inside the border */
+            box-sizing: border-box; /* Include padding and border in width */
+animation: fadeIn 1s; /* Fade-in animation */
+
+        }
+
+ @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .flex-container {
+            display: flex; /* Use flexbox for layout */
+            align-items: flex-start; /* Align items to the top */
+            width: 100%; /* Full width of the body */
+        }
+
+        .container {
+            position: relative;
+    width: 65%; /* Full width */
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-around; /* Distribute evenly */
+    align-items: flex-start; /* Center vertically */
+    max-width: 800px; /* Limit width */
+    margin: 0 auto; /* Center the container */
+    padding-top: 20px; /* Adjust this value to shift the image down */
+           
+        }
+
+        img {
+            width: 60%; /* Set image width to 60% of its original size */
+            height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Shift the image down */
+    margin-right: 250px; /* Move the image slightly to the left */
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+border-radius: 15px; /* Rounded corners for the image */
+
+
+
+
+        }
+
+
+        .circle {
+            position: absolute;
+            width: 120px; /* Width of the circle */
+            height: 120px; /* Height of the circle */
+            background-color: #ffd1dc; /* Background color for the circle */
+            border: 1px solid #000; /* Border for visibility */
+            border-radius: 50%; /* Make it a circle */
+            text-align: center; /* Center text horizontally */
+            line-height: 1.2; /* Center text vertically */
+            font-weight: bold; /* Make text bold */
+            font-size: 1.3vw; /* Font size */
+            padding: 2px; /* Padding for text */
+            display: flex;
+            justify-content: center; /* Center text horizontally */
+            align-items: center; /* Center text vertically */
+ transition: transform 0.3s; /* Smooth hover effect */
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for circles */
+
+
+        }
+
+ .circle:hover {
+            transform: scale(1.1); /* Scale effect on hover */
+  background-color:#d5006d; /* Darker pink on hover */
+color: #ffff; 
+
+        }
+
+
+        /* Positioning circles */
+        .circle1 { top: 1%; left: 15%; } /* Top left - Passionate about WIT*/
+        .circle2 { top: 20%; left: 0%; } /* Top center - Experience in Content */
+        .circle3 { top: 1%; left: 40%; } /* Top right  - Skilled in Social Media*/
+        .circle4 { top: 42%; left: -1%; } /* Bottom left  - Creative Design Skills*/
+        .circle5 { top: 60%; left: 9%; } /* Bottom center - Committed to Diversity*/
+        .circle6 { top: 65%; left: 40%; } /* Bottom right - Available for Monthly Commitment*/
+        .circle7 { top: 18%; left: 52%; } /* Bottom right - Eager to Network*/
+        .circle8 { top: 40%; left: 54%; } /* Bottom right */
+
+        .header {
+            color: purple; /* Text color */
+            font-size: 24px; /* Font size */
+            font-weight: bold; /* Bold text */
+            margin: 20px; /* Margin for spacing */
+            position: absolute; /* Positioning the header */
+            top: 0; /* Align to the top */
+            right: 6%; /* Slightly left from the right */
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow */
+ transition: transform 0.3s, color 0.3s; /* Transition for hover effect */
+
+        }
+.header:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+            color: purple; /* Change text color on hover */
+        }
+        .text {
+            color: black; /* Text color */
+            font-size: 14px; /* Font size */
+            font-weight: normal; /* Bold text */
+            margin-left: -200px; /* Space between image and text */
+            margin-top: 60px; /* Space between header and text */
+            max-width: 300px; /* Limit the width of the text container */
+            flex-grow: 1; /* Allow text to take up remaining space */
+            max-width: calc(100% - 600px); /* Adjust based on image width */
+            overflow-wrap: break-word; /* Allow long words to break */
+        }
+
+	 .text strong {
+            font-size: 16px; /* Larger font size for the strong text */
+            font-weight: bold; /* Bold weight for the strong text */
+            color: #d5006d; /* Darker pink for strong text */
+
+        }
+
+ @media (min-width: 400px) {
+            .flex-container {
+                flex-direction: row; /* Change to row on larger screens */
+            }
+            .text {
+                margin-left:-220px; /* Space between image and text */
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">Application for WIT Communication Team</div>
+
+    <div class="flex-container">
+        <div class="container">
+            <img src="C:\Users\atanvi\OneDrive - NetApp Inc\Desktop/w.jpg" alt="A lady">
+            <div class="circle circle1">Passionate about WIT!</div>
+            <div class="circle circle2">Experience in Content Creation</div>
+            <div class="circle circle3">Skilled in Social Media Management</div>
+            <div class="circle circle4">Creative Design Skills</div>
+            <div class="circle circle5">Committed to Diversity</div>
+            <div class="circle circle6">Available for Monthly Commitment</div>
+            <div class="circle circle7">Eager to Network</div>
+            <div class="circle circle8">Ready to Make an Impact!</div>
+        </div>
+        <div class="text">
+            <strong>Dear WIT Team,</strong>
+            <p>
+                I am excited to apply for the WIT Communication Track at NetApp India Women in Technology (WIT). With a <b>strong passion</b> for technology, diversity, and inclusion, I am eager to contribute my <b>skills in content creation, social media management, and design</b>.
+            </p>
+
+
+
+            <strong>Why I’m a Good Fit</strong>
+            <p>
+               I am passionate about leveraging <b>creativity and technology</b> to communicate meaningful messages. I enjoy crafting narratives that resonate with diverse audiences and have successfully executed several projects that involved both content creation and technical design.
+            </p>
+
+            <strong>Commitment</strong>
+            <p>
+               I am willing to <b>commit a couple of hours</b> every month to support WIT activities. I understand the importance of consistency in communication and promotional efforts, and I <b>look forward to contributing effectively</b>.
+            </p>
+
+            <strong>Motivation</strong>
+            <p>
+               The opportunity to be part of a <b>vibrant community</b> dedicated to diversity in technology is highly motivating. Collaborating with like-minded professionals and <b>contributing to a cause that fosters inclusivity</b> inspires me to deliver my best work every time.
+            </p>
+
+            <p>
+            Thank you for considering my application. I am looking forward to contributing to the success of WIT Communication Team.
+            </p>
+
+            <p>Sincerely,<br>Tanvi Arora</p>
+
+
+        </div>
+    </div>
+</body>
+</html>
